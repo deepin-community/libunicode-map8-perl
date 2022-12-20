@@ -1,0 +1,4 @@
+version=3
+opts=dversionmangle=s/\+dfsg$// \
+https://metacpan.org/release/Unicode-Map8    .*/Unicode-Map8-v?(\d[\d.]+)\.(?:tar(?:\.gz|\.bz2)?|tgz|zip) \
+debian debian/repack.stub

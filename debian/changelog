@@ -1,0 +1,203 @@
+libunicode-map8-perl (0.13+dfsg-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Fri, 11 Nov 2022 18:00:14 +0800
+
+libunicode-map8-perl (0.13+dfsg-4) unstable; urgency=low
+
+  * Team upload.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * Update debian/repack.stub.
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ intrigeri ]
+  * Declare compatibility with Standards-Version 3.9.5.
+  * Bump debhelper compat level to 9.
+  * Adjust versioned Build-Depends on debhelper to (>= 9.20120312~)
+    to get hardening build flags.
+  * Use DEP-3 headers in patch.
+  * Point to versioned GPL-1 in debian/copyright.
+
+ -- intrigeri <intrigeri@debian.org>  Fri, 11 Apr 2014 22:50:12 +0200
+
+libunicode-map8-perl (0.13+dfsg-3) unstable; urgency=low
+
+  * New patch 0001-Fix-test-failures-on-64-bit-architectures-due-to-inc.patch;
+    thanks a lot to Niko Tyni for tracking down this issue and providing a
+    patch (closes: #570670).
+  * Convert to source format 3.0 (quilt). Remove quilt framework.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 21 Mar 2010 01:59:46 +0100
+
+libunicode-map8-perl (0.13+dfsg-2) unstable; urgency=low
+
+  * debian/rules: add "--with quilt" to apply the patches again.
+  * Set Standards-Version to 3.8.4 (no changes).
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 12 Feb 2010 00:11:43 +0100
+
+libunicode-map8-perl (0.13+dfsg-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Rename source package libunicode-map8-perl
+  * Rewrite control description
+  * Standards-Version 3.8.3 (no changes)
+  * Add myself to Uploaders and Copyright
+  * Use new debhelper 7 short rules format
+  * Remove useless REAME.source, looks like a mistake
+  * Refresh all quilt patches
+  * Drop trailing junk from changelog
+  * Add repack scripts to handle DFSG-izing
+  * Refresh copyright to new DEP5 format
+  * Add patch headers and forward patches upstream
+
+  [ gregor herrmann ]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Removed: XS-
+    Vcs-Svn fields.
+  * Revert changes to upstream MANIFEST.
+  * Split out changes to aliases and additional maps into patches; add quilt
+    framework. Add debian/README.source.
+  * debian/watch: use dist-based URL.
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+  * Change my email address.
+  * Add build dependency on libunicode-string-perl, enables additional tests.
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Sun, 24 Jan 2010 10:45:53 -0500
+
+libunicode-map8-perl-dfsg (0.12-3) unstable; urgency=low
+
+  * Repackaged .orig.tar.gz: removed non-free RFC (closes: #393392).
+  * Set Standards-Version to 3.7.2 (no changes).
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Mon, 16 Oct 2006 23:09:40 +0200
+
+libunicode-map8-perl (0.12-2) unstable; urgency=low
+
+  * Fixed maintainer email address.
+  * Bump Standards-Version to 3.6.2. No changes needed.
+  * Switch to debhelper compatibility level 5. 
+  * Mistakenly, this package has again been debian-native.
+    Hopefully this upload will fix that.
+
+ -- Niko Tyni <ntyni@iki.fi>  Sat, 17 Dec 2005 00:39:54 +0200
+
+libunicode-map8-perl (0.12-1) unstable; urgency=low
+
+  * New upstream version.
+  * Package now maintained by the Debian Perl Group.
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Tue, 14 Jun 2005 20:12:10 -0400
+
+libunicode-map8-perl (0.11-4) unstable; urgency=low
+
+  * Added proper pointer to licenses in copyright file.  (Closes: #157661)
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Thu,  5 Sep 2002 14:57:08 -0400
+
+libunicode-map8-perl (0.11-3) unstable; urgency=low
+
+  * Added proper build depends for perl 5.8.0
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Sat, 17 Aug 2002 22:39:42 -0400
+
+libunicode-map8-perl (0.11-2) unstable; urgency=low
+
+  * Recompiled for perl 5.8.0
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Thu,  1 Aug 2002 00:43:13 -0400
+
+libunicode-map8-perl (0.11-1) unstable; urgency=low
+
+  * New upstream release.
+  * fixed 0-length maps cp1250-cp1258 (Closes: #154833)
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Tue, 30 Jul 2002 14:54:28 -0400
+
+libunicode-map8-perl (0.10p-1) unstable; urgency=low
+
+  * Recompiled for latest perl policy (Closes: #95416)
+  * Mistakenly, this package has been debian-native (i.e. no diff.gz)
+    Hopefully this upload will fix that.
+  * I've added a bunch of extra mappings which will be useful for 
+    wdg-html-validator
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Sat, 28 Apr 2001 01:48:43 -0400
+
+libunicode-map8-perl (0.10-2) unstable; urgency=low
+
+  * Recompiled for perl 5.6 (closes: #80650)
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Sun, 31 Dec 2000 09:47:52 -0500
+
+libunicode-map8-perl (0.10-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Mon, 28 Aug 2000 13:12:14 -0400
+
+libunicode-map8-perl (0.09-1) unstable; urgency=low
+
+  * New upstream version
+  * Fix for incorrect aliases for Russian character sets.  (Closes: #59209)
+    Thanks to Max Kosmach.
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Mon, 28 Feb 2000 22:26:05 -0500
+
+libunicode-map8-perl (0.08-1) unstable; urgency=low
+ 
+  * New upstream version
+ 
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Wed, 13 Oct 1999 15:51:58 -0400
+
+libunicode-map8-perl (0.05-5) unstable; urgency=low
+
+  * Now that the perl insanity is over, I can remove a kludge I placed in
+    the rules file.  (fixes: #41665)
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Wed, 21 Jul 1999 00:59:11 -0400
+
+libunicode-map8-perl (0.05-4) unstable; urgency=low
+
+  * Recompiled for perl-5.005
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Tue,  6 Jul 1999 02:03:16 -0400
+
+libunicode-map8-perl (0.05-3) unstable; urgency=low
+
+  *  No longer hard codes i386 in debian/rules (fixes #38692)
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Tue,  1 Jun 1999 06:50:51 -0400
+
+libunicode-map8-perl (0.05-2) unstable; urgency=low
+
+  * Added proper targets to debian/rules (fixes #38339)
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Wed, 26 May 1999 10:57:36 -0400
+
+libunicode-map8-perl (0.05-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Jaldhar H. Vyas <jaldhar@debian.org>  Mon, 05 Apr 1998 09:27:11 -0500
